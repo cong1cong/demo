@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  methods: {
+    // makeAddRouter() {
+    //   let falg = JSON.parse(sessionStorage.getItem("user")).curd;
+    //   console.log(falg);
+    //   if (!falg) return;
+    //   this.$router.addRoute("changtu", {
+    //     path: "/changtu/user",
+    //     name: "user",
+    //     component: () => import("@/views/user/user.vue"),
+    //   });
+    //   this.$router.addRoute("changtu", {
+    //     path: "/changtu/system",
+    //     name: "system",
+    //     component: () => import("@/views/system/system.vue"),
+    //   });
+    // },
+  },
+  created() {
+    // this.makeAddRouter()
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: #141518;
 }
 </style>
